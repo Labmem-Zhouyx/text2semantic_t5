@@ -1,0 +1,4 @@
+__pycache__/
+t5_*/
+pretrained_models/
+out_test/

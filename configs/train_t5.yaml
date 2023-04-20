@@ -1,0 +1,13 @@
+hparams:
+    # training setting
+    batch_size: 4
+    opt_type: 'AdamW'
+    learning_rate: 0.001
+    g_learning_rate: 0.0002
+    d_learning_rate: 0.0002
+    max_steps: 2000000  # 2M steps
+    fp16: false
+
+    # distributed training setting
+    dist_backend: "nccl"
+    dist_url: "tcp://localhost:12345"

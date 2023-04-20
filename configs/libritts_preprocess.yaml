@@ -1,0 +1,21 @@
+dataset: "LibriTTS"
+
+path:
+  corpus_path: "/opt/tiger/repo/data/libritts/LibriTTS"
+  lexicon_path: "lexicon/librispeech-lexicon.txt"
+  raw_path: "/mnt/bd/zhouyixuan-volume-1/data/LibriTTS/raw_data"
+  transcript_path: "/mnt/bd/zhouyixuan-volume-1/data/LibriTTS/transcript_data"
+  semantic_path: "/mnt/bd/zhouyixuan-volume-1/data/LibriTTS/semantic_data"
+
+subsets:
+  train: ["train-clean-100", "train-clean-360", "train-other-500"]
+  val: ["dev-clean", "dev-other"]
+  test: ["test-clean", "test-other"]
+
+preprocessing:
+  text:
+    text_cleaners: ["english_cleaners"]
+    language: "en"
+  audio:
+    sampling_rate: 24000
+    max_wav_value: 32767.0

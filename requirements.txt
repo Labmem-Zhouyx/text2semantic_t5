@@ -1,0 +1,6 @@
+g2p_en
+unidecode == 1.1.1
+einops
+fairseq
+accelerate
+transformers==4.25.1
